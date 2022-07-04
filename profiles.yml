@@ -1,0 +1,13 @@
+dbt-bq:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: cogent-range-355320
+      dataset: spotify
+      threads: 4
+      keyfile: /secrets/cogent-range-355320-5b604e903d3b.json
+      timeout_seconds: 300
+      priority: interactive
+      retries: 1

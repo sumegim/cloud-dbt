@@ -1,0 +1,5 @@
+version: 2
+
+models:
+    - name: f_mark_songs
+      description: "Spotify data"

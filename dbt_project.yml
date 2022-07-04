@@ -1,0 +1,15 @@
+name: 'mark_hu'
+version: 1.0.0
+config-version: 2
+
+profile: dbt-bq
+
+model-paths: ["models"]
+test-paths: ["tests"]
+target-path: "target"
+
+models:
+  mark_hu:
+    mart:
+      meterialized: view
+
