@@ -41,4 +41,4 @@ EXPOSE 3306
 
 RUN dbt deps
 
-CMD make run
+RUN make run
